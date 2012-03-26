@@ -17,7 +17,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit some common Samsung stuff.
-$(call inherit-product, device/samsung/common/galaxys.mk)
+#$(call inherit-product, device/samsung/common/galaxys.mk)
+
+$(call inherit-product, build/target/product/full.mk)
 
 ## (1) First, the most specific values, i.e. the aspects that are specific to GSM
 PRODUCT_COPY_FILES += \
